@@ -1,0 +1,59 @@
+.teacher-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.teacher-content h1 {
+  text-align: center;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.edit-btn,
+.view-btn,
+.del-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.view-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.del-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.write3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
