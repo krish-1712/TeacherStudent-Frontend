@@ -14,8 +14,9 @@ import Register from './components/Register';
 import Forgot from './components/Forgot';
 import Password from './components/Password';
 
-export const url = "http://localhost:8000"
+// export const url = "http://localhost:8000"
 
+export const url = "https://teacherstudentsmanagement.onrender.com"
 
 function App() {
 
