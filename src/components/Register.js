@@ -88,13 +88,23 @@ function Register() {
                         onChange={handleChange} />
                     {touched.password && errors.password ? <p style={{ color: "crimson" }}>{errors.password}</p> : ""}
                 </Form.Group>
-
                 <Form.Group className="mb-3">
-                    <Form.Label>Role</Form.Label>
-                    <Form.Control type="text" placeholder="Enter the Role" className="role" name="role" value={values.role}
-                        onChange={handleChange} />
-                    {touched.role && errors.role ? <p style={{ color: "crimson" }}>{errors.role}</p> : ""}
+                    <Form.Label style={{ marginRight: "350px" }}>Role</Form.Label>
+                    <Form.Control
+                        as="select"
+                        className="role"
+                        name="role"
+                        value={values.role}
+                        onChange={handleChange}
+                        style={{ width: '376px' }}
+                    >
+                        <option value=''>Select</option>
+                        <option value='student'>student</option>
+                        <option value='teacher'>teacher</option>
+                    </Form.Control>
+                    {touched.role && errors.role ? <p className='error-message'>{errors.role}</p> : ''}
                 </Form.Group>
+
                 <br></br>
                 <Button variant="primary" type='submit' className="submit-button">
                     Signup
