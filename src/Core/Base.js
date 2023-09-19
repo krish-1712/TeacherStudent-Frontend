@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 import "./Base.css";
 
 
@@ -12,17 +13,20 @@ export default function BaseApp({ title, styles, children }) {
   const handleLogout = () => {
     sessionStorage.clear();
     navigate("/");
+    toast.success("Logout successful");
   }
 
   const handleAddTeacherClick = () => {
     if (userRole !== 'student') {
       navigate("/teacher/user");
+
     }
   }
 
   const handleTeacherDetailsClick = () => {
     if (userRole !== 'student') {
       navigate("/teacherdetails");
+
     }
   }
 

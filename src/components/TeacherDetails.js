@@ -40,7 +40,7 @@ export function TeacherDetails() {
   const handleDelete = async (teacher) => {
     try {
       await axios.delete(`${url}/users/teacher/${teacher._id}`);
-      toast.success("User deleted successfully");
+      toast.success("Teacher deleted successfully");
 
       const updatedUserList = allTeachers.filter((u) => u._id !== teacher._id);
       setAllTeachers(updatedUserList);

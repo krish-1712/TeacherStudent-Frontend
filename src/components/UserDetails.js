@@ -19,6 +19,7 @@ export function UserDetails() {
     try {
       const responseAll = await axios.get(`${url}/users/getallusers`);
       setAllUsers(responseAll.data.teacher);
+      toast.success("Student deleted successfully");
     } catch (error) {
       console.error("Error fetching user details:", error);
       toast.error("An error occurred while fetching user details");
