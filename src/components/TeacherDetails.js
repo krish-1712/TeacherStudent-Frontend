@@ -22,6 +22,7 @@ export function TeacherDetails() {
       const responseAll = await axios.get(`${url}/users/getallteacher`);
       console.log(responseAll);
       setAllTeachers(responseAll.data.teacher);
+      toast.success("Teacher Fetched successfully");
     } catch (error) {
       console.error("Error fetching teacher details:", error);
       toast.error("An error occurred while fetching teacher details");

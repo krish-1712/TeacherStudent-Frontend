@@ -14,7 +14,7 @@ export default function UserComponents({ user, setUser }) {
   const deleteUser = async (id) => {
     try {
       await axios.delete(`${url}/users/users/${id}`);
-      toast.success("User deleted successfully");
+      toast.success("Student deleted successfully");
 
       const updatedUserList = user.filter((person) => person.id !== id);
       setUser(updatedUserList);
