@@ -26,7 +26,9 @@
     cursor: pointer;
     transition: background-color 0.2s;
     border-radius: 5px;
+    margin-left: 480px;
 }
+
 
 .btn4:hover,
 .btn5:hover {

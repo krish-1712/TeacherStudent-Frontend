@@ -8,7 +8,7 @@ export function Nopage() {
     const navigate = useNavigate();
     return (
         <div>
-            <h1>Hi you entered the Wrong Page 404 Error</h1>
+            <h1 style={{color:"floralwhite" ,marginLeft:"350px"}}>Hi you entered the Wrong Page 404 Error</h1>
             <button
                 onClick={() => navigate("/userdetails")} className="btn4">
                 Student Details
